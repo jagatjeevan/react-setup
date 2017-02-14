@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        loader: 'style-loader!css-loader!sass-loader!sasslint-loader',
         exclude: /node_modules/
       },
       {
@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'app/index.html', to: 'build/index.html' }
+      { from: 'app/index.html', to: 'index.html' }
     ])
   ],
   devServer: {
