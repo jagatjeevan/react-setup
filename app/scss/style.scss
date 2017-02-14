@@ -1,0 +1,12 @@
+// Fontello
+@import '../assets/font/fontello/css/fontello.css';
+@import '../assets/font/fontello/css/animation.css';
+// Configs
+@import 'config';
+
+body {
+	background-color: $body-background;
+	background-image: url('../assets/img/jerry.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
