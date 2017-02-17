@@ -1,4 +1,4 @@
-# A quick setup for your project in React.
+# A quick setup for your project in React Redux.
 It uses the following for your project.
 - Yarn to get the best our of the npm modules.
 - React v15.
