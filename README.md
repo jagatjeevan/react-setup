@@ -1,3 +1,4 @@
+[![SourceForge](https://fleep.io/blog/wp-content/uploads/2014/07/github_icon.png)]()
 # A quick setup for your project in React Redux.
 It uses the following for your project.
 - Yarn to get the best our of the npm modules.
