@@ -1,6 +1,8 @@
+// Frameworks
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Link from 'react-router/lib/Link';
 
 // actions
 import {updateStoreWithUserInput} from '../actions/updateStoreWithUserInput';
@@ -30,6 +32,7 @@ export class SayHello extends Component {
   render() {
     return(
       <div>
+        <Link to="/greet">Go the Greet page</Link>
         <input type="text" onBlur={this.greetUser} />
         <i className='icon-handshake-o' />
         <div>{this.props.greetings}</div>

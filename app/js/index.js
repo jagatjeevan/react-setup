@@ -6,8 +6,9 @@ import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
 import reducers from './reducers/rootReducer';
 
-// Components of the Application
-import SayHello from './components/SayHello';
+
+// Routes
+import routes from './routes';
 
 import '../scss/style.scss';
 const middleWare = applyMiddleware(thunk);
@@ -17,7 +18,7 @@ export default class App extends Component {
   render() {
     return(
       <Provider store={store}>
-        <SayHello />
+        {routes}
       </Provider>
     );
   }
