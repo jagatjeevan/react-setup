@@ -12,7 +12,7 @@ It uses the following for your project.
 
 # Start your application 
 ## To start the application
-- yarn install (you need to have yarn installed globally.) https://yarnpkg.com/
+- yarn install (you need to have yarn installed globally. https://yarnpkg.com/) You still can do a npm install to start
 - run "npm start".
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
