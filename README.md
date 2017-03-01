@@ -1,5 +1,5 @@
 # A quick setup for your project in React Redux. 
-[![NPM version](https://badge.fury.io/js/badge-list.svg)](http://badge.fury.io/js/badge-list)
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) [![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react) [![npm version](https://badge.fury.io/js/es6.svg)](https://badge.fury.io/js/es6)
  
 It uses the following for your project.
 - Yarn to get the best our of the npm modules.
