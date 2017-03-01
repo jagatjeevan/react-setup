@@ -1,6 +1,6 @@
 // Frameworks
 import React from 'react';
-import { Route, Router, hashHistory, IndexRoute } from 'react-router';
+import { Route, Router, IndexRoute, browserHistory } from 'react-router';
 
 // Configs
 import AppConfig from './appConfig';
@@ -11,7 +11,7 @@ import SayHello from './components/SayHello';
 import GreetUser from './components/GreetUser';
 
 export default (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={SayHello} />
       <Route path={AppConfig.greetUser} component={GreetUser} />
