@@ -12,7 +12,7 @@ import GreetUser from './components/GreetUser';
 
 export default (
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
+    <Route path={AppConfig.basePath} component={App}>
       <IndexRoute component={SayHello} />
       <Route path={AppConfig.greetUser} component={GreetUser} />
     </Route>

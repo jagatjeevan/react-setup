@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'react-router/lib/Link';
 import { connect } from 'react-redux';
 
 function mapStateToProps(state){
@@ -10,7 +11,10 @@ function mapStateToProps(state){
 export class GreetUser extends Component {
   render() {
     return (
-      <h2>{this.props.greetings}</h2>  
+      <h2>
+        {this.props.greetings}
+        <Link to="/">Go the Home page</Link>
+      </h2>
     );
   }
 }
