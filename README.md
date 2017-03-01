@@ -1,4 +1,4 @@
-# A quick setup for your project in React Redux.
+# A quick setup for your project in React Redux. [![npm version](https://badge.fury.io/js/react-laser-beam.svg)]
 It uses the following for your project.
 - Yarn to get the best our of the npm modules.
 - Webpack v2. You do not require babel for transpilling. Even webpack is written in es6 syntax
@@ -10,10 +10,14 @@ It uses the following for your project.
 - linters for JavaScript and Sass.
 
 
-# Start your application 
-## To start the application
-- yarn install (you need to have yarn installed globally. https://yarnpkg.com/) You still can do a npm install to start
-- run "npm start".
+# To start the application
+```
+yarn install
+```
+Get Yarn from https://yarnpkg.com/. You still can go ahead with npm "npm install"
+```
+npm start
+```
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
 
