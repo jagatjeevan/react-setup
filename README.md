@@ -1,4 +1,5 @@
-# A quick setup for your project in React Redux. [![npm version](https://badge.fury.io/js/react-laser-beam.svg)]
+# A quick setup for your project in React Redux. 
+[![npm version](https://badge.fury.io/js/npm.svg)](https://badge.fury.io/js/npm) 
 It uses the following for your project.
 - Yarn to get the best our of the npm modules.
 - Webpack v2. You do not require babel for transpilling. Even webpack is written in es6 syntax
