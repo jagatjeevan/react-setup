@@ -25,8 +25,9 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 #TODO
 ## Setup
-U+2713 Yarn
-
-<strike>React</strike>
-<strike>Redux</strike>
-<strike>Router</strike>
+&#10003; Yarn
+&#10003; Webpack2
+&#10003; React
+&#10003; Router
+&#10003; Redux
+&#10003; Localisation
