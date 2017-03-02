@@ -23,3 +23,10 @@ npm start
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
 
+#TODO
+## Setup
+U+2713 Yarn
+
+<strike>React</strike>
+<strike>Redux</strike>
+<strike>Router</strike>
