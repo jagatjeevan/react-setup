@@ -33,7 +33,10 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: 'app/index.html', to: 'index.html' }
-    ])
+    ]),
+    ["react-intl", {
+      "messagesDir": "./app/assets/locale/"
+    }]
   ],
   devServer: {
     contentBase: path.join(__dirname, "build"),

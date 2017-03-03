@@ -4,6 +4,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Link from 'react-router/lib/Link';
 
+// Localisation
+import { FormattedMessage } from 'react-intl';
+
 // actions
 import {updateStoreWithUserInput} from '../actions/updateStoreWithUserInput';
 
@@ -32,10 +35,19 @@ export class SayHello extends Component {
   render() {
     return(
       <div>
-        <Link to="/greet">Go the Greet page</Link>
+        <h2>
+          <FormattedMessage id="app.welcome" />
+          <Link to="/greet">Go to the Greet page</Link>
+        </h2>
+        
         <input type="text" onBlur={this.greetUser} />
         <i className='icon-handshake-o' />
-        <div>{this.props.greetings}</div>
+        <div>
+          <FormattedMessage
+            id="app.greeting_message"
+            values={{ name: this.props.greetings}}
+          />
+        </div>
       </div>
     );
   }

@@ -6,7 +6,8 @@
 
 body {
   background-color: $body-background;
-  background-image: url('../assets/img/jerry.jpg');
+  background-image: url('../assets/img/sky.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+
 }
