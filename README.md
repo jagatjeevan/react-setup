@@ -1,6 +1,7 @@
 ## A quick setup for your project in React Redux. 
 
 It uses the following for your project.
+
 &#10147; Yarn to get the best our of the npm modules.
 
 &#10147; Webpack v2. You do not require babel for transpilling. Even webpack is written in es6 syntax
@@ -51,4 +52,4 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 
 
-Made with &#2766;
+Made with &#9829;
