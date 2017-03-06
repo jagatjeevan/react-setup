@@ -2,12 +2,19 @@
 
 It uses the following for your project.
 &#10147; Yarn to get the best our of the npm modules.
+
 &#10147; Webpack v2. You do not require babel for transpilling. Even webpack is written in es6 syntax
+
 &#10147; React v15.
+
 &#10147; React Router
+
 &#10147; Integrated with Redux for State Management.
+
 &#10147; Sass loader.
+
 &#10147; Fontello for your handpicked icon fonts from a range of font icons.
+
 &#10147; linters for JavaScript and Sass.
 
 
