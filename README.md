@@ -22,7 +22,6 @@ npm start
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
 
-#TODO
 ## Setup
 &#10003; Yarn
 
@@ -34,4 +33,11 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 &#10003; Redux
 
-&#10003; Localisation
+## Todos in setup
+&#10147; Localisation
+
+&#10147; Tests
+
+&#10147; Coverage
+
+&#10147; Mock Response
