@@ -51,4 +51,4 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 
 
-Made with U+2665;
+Made with &#2665;
