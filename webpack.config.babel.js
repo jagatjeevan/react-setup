@@ -8,35 +8,37 @@ module.exports = {
     path: path.resolve(__dirname, './build')
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: 'babel-loader',
         include: /app\/js/,
         exclude: /node_modules/
       },
       {
         test: /\.(scss|css)$/,
-        loader: 'style-loader!css-loader!sass-loader!sasslint-loader',
+        use: [
+          {loader: 'style-loader'},
+          {loader: 'css-loader'},
+          {loader: 'sass-loader'},
+          {loader: 'sasslint-loader'}
+        ],
         exclude: /node_modules/
       },
       {
         test: /\.(eot|ttf|woff|woff2|data:application).*$/,
-        loader: 'file-loader'
+        use: 'file-loader'
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg).*$/,
-        loader: 'url-loader?limit=10000',
+        use: 'url-loader?limit=10000',
       }
-    ]
+    ],
   },
   plugins: [
     new CopyWebpackPlugin([
       { from: 'app/index.html', to: 'index.html' }
-    ]),
-    ["react-intl", {
-      "messagesDir": "./app/assets/locale/"
-    }]
+    ])
   ],
   devServer: {
     contentBase: path.join(__dirname, "build"),
