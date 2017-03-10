@@ -11,18 +11,16 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            babelrc: false,
-            presets: [
-              'react',
-              ['es2015', {
-                "modules": false
-              }],
-            ],
-          }
-        }],
+        loader: 'babel-loader',
+        options: {
+          babelrc: false,
+          presets: [
+            'react',
+            ['es2015', {
+              "modules": false
+            }],
+          ],
+        },
         include: /app\/js/,
         exclude: /node_modules/
       },
