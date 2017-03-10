@@ -1,4 +1,4 @@
-import path from 'path';
+var path =  require('path');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
@@ -11,7 +11,18 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            babelrc: false,
+            presets: [
+              'react',
+              ['es2015', {
+                "modules": false
+              }],
+            ],
+          }
+        }],
         include: /app\/js/,
         exclude: /node_modules/
       },
