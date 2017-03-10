@@ -33,7 +33,9 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 ## Setup
 &#10003; Yarn
 
-&#10003; Webpack2
+&#10003; Webpack2: We have separate vendor and bundle file to harness parallel loading of files.
+
+&#10003; Stats would give you the size of the files generated so as to keep a track of the commits and file sizes.
 
 &#10003; React
 
@@ -49,7 +51,5 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 &#10147; Coverage
 
 &#10147; Mock Response
-
-&#10147; Setup : Minification, Separate vendor files to track the size, webpack stats.
 
 Made with &#9829;
