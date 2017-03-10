@@ -43,9 +43,9 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 &#10003; Redux
 
-## Todos in setup
-&#10147; Localisation
+&#10003; Localisation
 
+## Todos in setup
 &#10147; Tests
 
 &#10147; Coverage
