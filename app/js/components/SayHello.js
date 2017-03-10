@@ -4,6 +4,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Link from 'react-router/lib/Link';
 
+// Translator
+import translator from '../util/i18n.js';
+import ChooseLanguage from './changeLanguage';
 // actions
 import {updateStoreWithUserInput} from '../actions/updateStoreWithUserInput';
 
@@ -23,21 +26,32 @@ export class SayHello extends Component {
   constructor() {
     super();
     this.greetUser = this.greetUser.bind(this);
+    this.greetName = this.greetName.bind(this);
   }
 
   greetUser(e) {
     this.props.updateStoreWithUserInput(e.target.value);
   }
 
+  greetName() {
+    if(this.props.greetings !== '')
+      return (
+        <div>{translator.translate('app.greeting_message')} : {this.props.greetings}</div>
+      );
+    return null;
+  }
+
   render() {
     return(
       <div>
         <h2>
-          <Link to="/greet">Go to the Greet page</Link>
+          {translator.translate('app.welcome')}
+          <Link to="/greet">{translator.translate('app.greet_page_link')}</Link>
         </h2>
-        
         <input type="text" onBlur={this.greetUser} />
         <i className='icon-handshake-o' />
+        {this.greetName()}
+        <ChooseLanguage />
       </div>
     );
   }

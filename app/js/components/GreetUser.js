@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Link from 'react-router/lib/Link';
 import { connect } from 'react-redux';
+// Translation
+import translator from '../util/i18n';
+
+import ChooseLanguage from './changeLanguage';
 
 function mapStateToProps(state){
   return {
@@ -11,10 +15,13 @@ function mapStateToProps(state){
 export class GreetUser extends Component {
   render() {
     return (
+      <div>
       <h2>
         {this.props.greetings}
-        <Link to="/">Go the Home page</Link>
+        <Link to="/">{translator.translate('app.home_page_link')}</Link>
       </h2>
+      <ChooseLanguage />
+      </div>
     );
   }
 }

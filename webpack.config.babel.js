@@ -69,6 +69,9 @@ module.exports = {
         },
       }),
     new webpack.optimize.AggressiveMergingPlugin(),
+    new CopyWebpackPlugin([
+      { from: 'app/assets/locale/', to: 'locale' }
+    ]),
     new HtmlWebpackPlugin({template: 'app/index.html'}),
     new VisualizerPlugin({filename: statsPath})
   ],

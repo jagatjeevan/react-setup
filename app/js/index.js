@@ -4,7 +4,9 @@ import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { applyMiddleware, createStore } from 'redux';
-
+// Translator
+import i18N from './util/i18n';
+import * as language from './util/language';
 // Reducers
 import reducers from './reducers/rootReducer';
 
@@ -16,6 +18,7 @@ import '../scss/style.scss';
 
 const middleWare = applyMiddleware(thunk);
 const store = createStore(reducers, middleWare);
+language.getLanguage();
 
 export default class App extends Component {
   render() {
@@ -27,4 +30,12 @@ export default class App extends Component {
   }
 }
 
-ReactDom.render(<App />, document.getElementById('content'));
+function run() {
+  i18N.initiateTranslator(start);
+}
+
+function start() {
+  ReactDom.render(<App />, document.getElementById('content'));
+}
+
+window.addEventListener('DOMContentLoaded', run);

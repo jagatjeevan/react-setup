@@ -1,3 +1,8 @@
 {
-  "greet": "Hello"
+  "app": {
+    "welcome": "Hello",
+    "greeting_message": "How are you ",
+    "greet_page_link": "Go to Greet page",
+    "home_page_link": "Go to Home page"
+  }
 }

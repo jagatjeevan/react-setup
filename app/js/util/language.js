@@ -1,10 +1,11 @@
+import Cookie from 'js-cookie';
+
 export function setLanguage(lang) {
-  localStorage.setItem('lang', lang);
+  Cookie.set('lang', lang);
 }
 
 export function getLanguage() {
-  if(!localStorage.getItem('lang') || localStorage.getItem('lang') === '')
+  if(!Cookie.get('lang') || Cookie.get('lang') === '')
     setLanguage('en');
-
-  return localStorage.getItem('lang');
+  return Cookie.get('lang');
 }
