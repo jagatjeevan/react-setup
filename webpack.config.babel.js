@@ -1,10 +1,22 @@
 var path =  require('path');
+var webpack = require('webpack');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var VisualizerPlugin = require('webpack-visualizer-plugin');
+
+var statsPath = '../stats/stats.html';
 
 module.exports = {
-  entry: path.resolve(__dirname, 'app/js/index.js'),
+  entry: {
+    main: path.resolve(__dirname, 'app/js/index.js'),
+    vendor: [
+      'react',
+      'react-dom',
+      'react-router'
+    ]
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, './build')
   },
   module: {
@@ -45,9 +57,20 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyWebpackPlugin([
-      { from: 'app/index.html', to: 'index.html' }
-    ])
+    new webpack.optimize.CommonsChunkPlugin({
+        name: 'vendor',
+        filename: 'vendor.[hash].js',
+        minChunks: Infinity,
+      }),
+    new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          screw_ie8: true,
+          warnings: false
+        },
+      }),
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new HtmlWebpackPlugin({template: 'app/index.html'}),
+    new VisualizerPlugin({filename: statsPath})
   ],
   devServer: {
     contentBase: path.join(__dirname, "build"),
