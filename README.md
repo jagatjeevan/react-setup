@@ -1,6 +1,6 @@
 ## A quick setup for your project in React Redux. 
 
-It uses the following for your project.
+It provides the following for your project.
 
 &#10147; Yarn to get the best our of the npm modules.
 
@@ -16,7 +16,7 @@ It uses the following for your project.
 
 &#10147; Fontello for your handpicked icon fonts from a range of font icons.
 
-&#10147; linters for JavaScript and Sass.
+&#10147; linters for JavaScript.
 
 
 ## To start the application
@@ -30,7 +30,7 @@ npm start
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
 
-## Setup
+## Setup has
 &#10003; Yarn
 
 &#10003; Webpack2: We have separate vendor and bundle file to harness parallel loading of files.
@@ -44,6 +44,10 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 &#10003; Redux
 
 &#10003; Localisation
+
+&#10003; Linting
+
+&#10003; Pre-commit hooks to linting.
 
 ## Todos in setup
 &#10147; Tests
