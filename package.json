@@ -39,6 +39,7 @@
     "precommit-hook": "^3.0.0",
     "react-intl": "^2.2.3",
     "rimraf": "^2.6.1",
+    "sass-lint": "^1.10.2",
     "sass-loader": "^5.0.0",
     "sasslint-loader": "^0.0.1",
     "style-loader": "^0.13.1",
@@ -49,6 +50,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
+    "sass-lint": "sass-lint -c ./.sass-lint.yml 'app/**/*.scss' -v -q",
     "lint": "eslint .eslintrc.json app/",
     "lint:fix": "eslint .eslintrc.json app/ --fix",
     "build": "webpack",
@@ -57,6 +59,7 @@
     "validate": "npm ls"
   },
   "pre-commit": [
-    "lint"
+    "lint",
+    "sass-lint"
   ]
 }
