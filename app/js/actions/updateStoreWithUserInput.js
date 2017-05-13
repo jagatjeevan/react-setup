@@ -1,6 +1,6 @@
 export function updateStoreWithUserInput(userInput) {
   return {
-    type: "UpdateStoreWithUserInput",
-    payload: userInput
-  }
+    type: 'UpdateStoreWithUserInput',
+    payload: userInput,
+  };
 }

@@ -1,5 +1,5 @@
 // Framework imports
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
@@ -20,22 +20,18 @@ const middleWare = applyMiddleware(thunk);
 const store = createStore(reducers, middleWare);
 language.getLanguage();
 
-export default class App extends Component {
-  render() {
-    return(
-      <Provider store={store}>
-        {routes}
-      </Provider>
-    );
-  }
+function start() {
+  ReactDom.render(<App />, document.getElementById('content'));
 }
 
 function run() {
   i18N.initiateTranslator(start);
 }
 
-function start() {
-  ReactDom.render(<App />, document.getElementById('content'));
-}
+export const App = () => (
+  <Provider store={store}>
+    {routes}
+  </Provider>
+);
 
 window.addEventListener('DOMContentLoaded', run);

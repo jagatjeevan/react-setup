@@ -1,14 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="full-height">
-        {this.props.children}
-      </div>
-    );
-  }
-}
+export const App = props => (
+  <div className="full-height">
+    {props.children}
+  </div>
+);
 
 App.propTypes = {
   children: PropTypes.element.isRequired,

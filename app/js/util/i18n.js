@@ -1,12 +1,12 @@
 import i18next from 'i18next';
 import i18nextXhr from 'i18next-xhr-backend';
 import i18nextLangDetector from 'i18next-browser-languagedetector';
-import config from '../appConfig.js';
 import Cookie from 'js-cookie';
+import config from '../appConfig';
 
 const supportedlanguages = [
   'en',
-  'fr'
+  'fr',
 ];
 
 class I18nTranslator {
@@ -17,8 +17,7 @@ class I18nTranslator {
   initiateTranslator(resolve) {
     return new Promise(() => {
       let langToDisplay;
-      if(!Cookie.get('lang'))
-        langToDisplay = 'en';
+      if (!Cookie.get('lang')) { langToDisplay = 'en'; }
       langToDisplay = (supportedlanguages.filter(lang => lang === Cookie.get('lang')).length > 0) ? Cookie.get('lang') : 'en';
       i18next
         .use(i18nextXhr)
@@ -35,8 +34,8 @@ class I18nTranslator {
           },
         }, (err, t) => {
           if (err) {
-            console.log("something went wrong");
-            console.log(err);
+            /* eslint no-console: 0 */
+            console.log('something went wrong in loading translations', err);
           } else {
             this.translator = t;
             resolve();
