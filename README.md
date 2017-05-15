@@ -1,3 +1,6 @@
+[![dependencies Status](https://david-dm.org/jagatjeevan/react-setup/status.svg)](https://david-dm.org/jagatjeevan/react-setup)
+[![devDependencies Status](https://david-dm.org/jagatjeevan/react-setup/dev-status.svg)](https://david-dm.org/jagatjeevan/react-setup?type=dev)
+
 ## A quick setup for your project in React Redux. 
 
 It provides the following for your project.
@@ -18,6 +21,9 @@ It provides the following for your project.
 
 &#10147; linters for JavaScript.
 
+## Pre-requisites
+1. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+2. [Node.js](https://nodejs.org/) v6+
 
 ## To start the application
 ```
@@ -25,7 +31,7 @@ yarn install
 ```
 Get Yarn from https://yarnpkg.com/. You still can go ahead with npm "npm install"
 ```
-npm start
+yarn start
 ```
 
 This should open the browser in the port 2222. Or access on http://localhost:2222/
