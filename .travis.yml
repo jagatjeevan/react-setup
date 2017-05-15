@@ -7,7 +7,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install yarn; fi
   - node --version
 
-script:
+scripts:
   - yarn lint
-  -yarn sass-lint
+  - yarn sass-lint
 

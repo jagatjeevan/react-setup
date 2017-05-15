@@ -57,7 +57,7 @@
     "prebuild": "npm run clean",
     "clean": "rimraf -rf build",
     "validate": "npm ls",
-    "test": ["lint", "sass-lint"]
+    "test": "yarn lint && yarn sass-lint"
   },
   "pre-commit": [
     "lint",
