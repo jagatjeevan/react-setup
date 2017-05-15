@@ -1,5 +1,6 @@
 [![dependencies Status](https://david-dm.org/jagatjeevan/react-setup/status.svg)](https://david-dm.org/jagatjeevan/react-setup)
 [![devDependencies Status](https://david-dm.org/jagatjeevan/react-setup/dev-status.svg)](https://david-dm.org/jagatjeevan/react-setup?type=dev)
+[![npm](https://img.shields.io/npm/l/express.svg)]()
 
 ## A quick setup for your project in React Redux. 
 
