@@ -56,7 +56,8 @@
     "build": "webpack",
     "prebuild": "npm run clean",
     "clean": "rimraf -rf build",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "test": ["lint", "sass-lint"]
   },
   "pre-commit": [
     "lint",
