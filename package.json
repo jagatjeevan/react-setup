@@ -4,7 +4,7 @@
     "node": ">=7.0.0",
     "npm": ">=3.10.0"
   },
-  "engineStrict" : true,
+  "engineStrict": true,
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
@@ -48,6 +48,7 @@
     "html-webpack-plugin": "^2.28.0",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.0",
+    "nsp": "^2.6.3",
     "precommit-hook": "^3.0.0",
     "react-intl": "^2.2.3",
     "rimraf": "^2.6.1",
@@ -69,10 +70,12 @@
     "prebuild": "npm run clean",
     "clean": "rimraf -rf build",
     "validate": "npm ls",
-    "test": "yarn lint && yarn sass-lint"
+    "test": "yarn lint && yarn sass-lint",
+    "nsp-check": "nsp check"
   },
   "pre-commit": [
     "lint",
-    "sass-lint"
+    "sass-lint",
+    "nsp-check"
   ]
 }

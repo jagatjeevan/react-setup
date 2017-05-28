@@ -12,7 +12,7 @@ It provides the following for your project.
 
 &#10147; React v15.
 
-&#10147; React Router
+&#10147; React Router v3
 
 &#10147; Integrated with Redux for State Management.
 
@@ -21,6 +21,8 @@ It provides the following for your project.
 &#10147; Fontello for your handpicked icon fonts from a range of font icons.
 
 &#10147; linters for JavaScript.
+
+&#10147; [Nsp](https://www.npmjs.com/package/nsp) for checking vulnerability. 
 
 ## Pre-requisites
 1. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
@@ -53,6 +55,8 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 &#10003; Localisation
 
 &#10003; Linting
+
+&#10003; Checking for vulnerability
 
 &#10003; Pre-commit hooks to linting.
 
