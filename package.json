@@ -1,8 +1,20 @@
 {
   "name": "webpack2-setup",
+  "engines": {
+    "node": ">=7.0.0",
+    "npm": ">=3.10.0"
+  },
+  "engineStrict" : true,
   "version": "1.0.0",
   "main": "index.js",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagatjeevan/react-setup"
+  },
+  "author": {
+    "name": "Jagat Jeevan Sahoo",
+    "email": "kanhajeevan@gmail.com"
+  },
   "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.22.2",

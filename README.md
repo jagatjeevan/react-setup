@@ -24,7 +24,7 @@ It provides the following for your project.
 
 ## Pre-requisites
 1. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
-2. [Node.js](https://nodejs.org/) v6+
+2. [Node.js](https://nodejs.org/) v7+
 
 ## To start the application
 ```
