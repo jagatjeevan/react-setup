@@ -1,6 +1,5 @@
 [![dependencies Status](https://david-dm.org/jagatjeevan/react-setup/status.svg)](https://david-dm.org/jagatjeevan/react-setup)
 [![devDependencies Status](https://david-dm.org/jagatjeevan/react-setup/dev-status.svg)](https://david-dm.org/jagatjeevan/react-setup?type=dev)
-[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork)]()
 [![npm](https://img.shields.io/npm/l/express.svg)]()
 
 ## A quick setup for your project in React Redux. 
