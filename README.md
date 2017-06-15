@@ -67,4 +67,8 @@ This should open the browser in the port 2222. Or access on http://localhost:222
 
 &#10147; Mock Response
 
+&#10147; Upgrade React
+
+&#10147; Upgrade React Router
+
 Made with &#9829;
