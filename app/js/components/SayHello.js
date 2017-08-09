@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Link from 'react-router/lib/Link';
+import { Link } from 'react-router-dom';
 
 // Translator
 import translator from '../util/i18n';

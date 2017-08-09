@@ -2,7 +2,7 @@ const basePath = '/';
 export default {
   // Routes
   basePath,
-  greetUser: 'greet',
+  greetUser: '/greet',
   // i18n Translations
   translationFolder: 'locale',
 };
