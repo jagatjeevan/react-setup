@@ -1,5 +1,5 @@
-# Promo-frontend
-Frontend for promotion advisor
+# React setup
+A sample project for a React project
 
 # Installation Guide
 ###### Dependency
