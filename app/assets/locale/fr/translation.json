@@ -1,8 +1,14 @@
 {
-  "app" : {
-    "welcome": "Bonjour",
-    "greeting_message": "Dire bonjour à",
-    "greet_page_link": "Accéder à la page Greet",
-    "home_page_link": "Aller à la page d'accueil"
+  "app": {
+    "menu": {
+      "dashboard": "FR Dashboard",
+      "about": "FR About Us"
+    },
+    "language": {
+      "english": "EN English",
+      "french": "EN French"
+    },
+    "back": "FR Back",
+    "aboutParagraph": "FR Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus dolores ducimus excepturi, iusto molestiae neque, perferendis porro qui quod rem, totam voluptas! Blanditiis ex illo placeat quia sit vero?"
   }
 }

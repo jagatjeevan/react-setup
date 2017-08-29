@@ -1,0 +1,40 @@
+<svg width="102px" height="137px" viewBox="0 0 102 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+  <desc>Created with Sketch.</desc>
+  <defs>
+    <filter x="-13.8%" y="-5.6%" width="127.7%" height="114.3%" filterUnits="objectBoundingBox" id="filter-1">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0.811118197   0 0 0 0 0.758487047   0 0 0 0 0.758487047  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    <filter x="-11.2%" y="-6.3%" width="122.5%" height="116.2%" filterUnits="objectBoundingBox" id="filter-2">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g id="periscope-logo" transform="translate(2.000000, 3.000000)">
+      <g id="periscope-blue" filter="url(#filter-1)" transform="translate(29.000000, 0.000000)" stroke="#12749C">
+        <path d="M0.85106383,1.5 L65,1.5" id="Line" stroke-width="4"></path>
+        <path d="M1.27659574,3 L1.27659574,126" id="Line-Copy" stroke-width="4"></path>
+      </g>
+      <g id="periscope-green" filter="url(#filter-2)" transform="translate(14.000000, 15.000000)" stroke="#169C48">
+        <path d="M0.85106383,1.5 L80,1.5" id="Line" stroke-width="4"></path>
+        <path d="M1.27659574,3 L1.27659574,111" id="Line-Copy" stroke-width="4"></path>
+      </g>
+      <g id="periscope-red" transform="translate(0.000000, 30.000000)" stroke="#E8242D">
+        <path d="M0,1.5 L93,1.5" id="Line" stroke-width="4"></path>
+        <path d="M0.5,3 L0.5,96" id="Line-Copy" stroke-width="4"></path>
+      </g>
+    </g>
+  </g>
+</svg>

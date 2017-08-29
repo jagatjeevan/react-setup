@@ -1,6 +1,14 @@
-.DS_Store
-node_modules
-npm-debug.log
-build
 .idea/
-stats
+node_modules/
+*.js.map
+*.css.map
+build
+npm-debug.log
+
+# Generated Files by sass-lint
+.jshintignore
+.jshintrc
+
+# Coverage
+.nyc_output
+coverage

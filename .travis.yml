@@ -4,5 +4,7 @@ node_js:
 
 scripts:
   - node --version
-  - yarn lint
-  - yarn sass-lint
+  - npm run sassLint
+  - npm run lint
+  - npm run test
+  - npm run nsp

@@ -1,37 +1,41 @@
-// Framework imports
 import React from 'react';
 import ReactDom from 'react-dom';
+import { HashRouter } from 'react-router-dom';
+import { I18nextProvider } from 'react-i18next';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
-import { applyMiddleware, createStore } from 'redux';
-// Translator
-import i18N from './util/i18n';
-import * as language from './util/language';
-// Reducers
-import reducers from './reducers/rootReducer';
 
-// Routes
-import routes from './routes';
+import App from './components/App';
+import I18N from './utils/I18N';
+import { configureStore } from './reduxStore';
 
-// Scss
 import '../scss/style.scss';
 
-const middleWare = applyMiddleware(thunk);
-const store = createStore(reducers, middleWare);
-language.getLanguage();
+const store = configureStore();
 
-function start() {
-  ReactDom.render(<App />, document.getElementById('content'));
+function startRender() {
+  ReactDom.render((
+    <I18nextProvider i18n={I18N}>
+      <Provider store={store}>
+        <HashRouter>
+          <App />
+        </HashRouter>
+      </Provider>
+    </I18nextProvider>
+  ), document.querySelector('#app'));
+}
+
+function bootstrapFailed(err) {
+  /* eslint no-console:0 */
+  console.log('The translations failed', err);
 }
 
 function run() {
-  i18N.initiateTranslator(start);
+  I18N.initiateTranslator(startRender, bootstrapFailed);
 }
 
-export const App = () => (
-  <Provider store={store}>
-    {routes}
-  </Provider>
-);
-
-window.addEventListener('DOMContentLoaded', run);
+// Run the application when both DOM is ready and page content is loaded
+if (['complete', 'loaded', 'interactive'].includes(document.readyState) && document.body) {
+  run();
+} else {
+  document.addEventListener('DOMContentLoaded', run, false);
+}

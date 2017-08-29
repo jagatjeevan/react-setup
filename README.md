@@ -1,74 +1,39 @@
-[![dependencies Status](https://david-dm.org/jagatjeevan/react-setup/status.svg)](https://david-dm.org/jagatjeevan/react-setup)
-[![devDependencies Status](https://david-dm.org/jagatjeevan/react-setup/dev-status.svg)](https://david-dm.org/jagatjeevan/react-setup?type=dev)
-[![npm](https://img.shields.io/npm/l/express.svg)]()
+# Promo-frontend
+Frontend for promotion advisor
 
-## A quick setup for your project in React Redux. 
+# Installation Guide
+###### Dependency
+- [Node](https://nodejs.org/en/) : Make sure you are on 6.11.1 version.
 
-It provides the following for your project.
+###### Tech Stack
+- Webpack : The module bundler
+- Sass : Css Pre-processor
+- Sass Linter : Style consistency
+- Es6 : Better way to write JavaScript.
+- Es6 Linter : JavaScript Consistentency and best practices
+- nsp : Checks the node modules vulnerabilities
+- React
+- Redux : state management
+- Translation : i18next
+- Unit Testing : Mocha and chai
+- Coverage : Istanbul.
 
-&#10147; Yarn to get the best our of the npm modules.
+###### Running the module
+- Check if you are running the right version of node. Check ".nvmrc" or "package.json"
+- npm install
+- npm start <br />
+Check for other options in package.json, script section. 
 
-&#10147; Webpack v2. You do not require babel for transpilling. Even webpack is written in es6 syntax
+## Some Practices followed
+###### Git Commit message
+- Write crisp commit message. Details should be in the code and not the message.
+- Format : JiraCard | Message | Pair1/Pair2
+- There are pre-commit hooks. Please try not to push with --no-verify option.
 
-&#10147; React v15.
+###### Component Names
+- Component names are Sentence case. App, Dashboard, etc.
+- Rest are small case. 
 
-&#10147; React Router v3
-
-&#10147; Integrated with Redux for State Management.
-
-&#10147; Sass loader.
-
-&#10147; Fontello for your handpicked icon fonts from a range of font icons.
-
-&#10147; linters for JavaScript.
-
-&#10147; [Nsp](https://www.npmjs.com/package/nsp) for checking vulnerability. 
-
-## Pre-requisites
-1. [Yarn](https://yarnpkg.com/lang/en/docs/install/)
-2. [Node.js](https://nodejs.org/) v7+
-
-## To start the application
-```
-yarn install
-```
-Get Yarn from https://yarnpkg.com/. You still can go ahead with npm "npm install"
-```
-yarn start
-```
-
-This should open the browser in the port 2222. Or access on http://localhost:2222/
-
-## Setup has
-&#10003; Yarn
-
-&#10003; Webpack2: We have separate vendor and bundle file to harness parallel loading of files.
-
-&#10003; Stats would give you the size of the files generated so as to keep a track of the commits and file sizes.
-
-&#10003; React
-
-&#10003; Router
-
-&#10003; Redux
-
-&#10003; Localisation
-
-&#10003; Linting
-
-&#10003; Checking for vulnerability
-
-&#10003; Pre-commit hooks to linting.
-
-## Todos in setup
-&#10147; Tests
-
-&#10147; Coverage
-
-&#10147; Mock Response
-
-&#10147; Upgrade React
-
-&#10147; Upgrade React Router
-
-Made with &#9829;
+###### Fixme
+- Yarn deletes the .yml file required for sasslint. Hence not using yarn
+- Translation does not refresh the labels. It has to be manually refreshed

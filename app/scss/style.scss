@@ -1,12 +1,35 @@
-// Fontello
-@import '../assets/font/fontello/css/fontello.css';
-@import '../assets/font/fontello/css/animation.css';
-// Configs
-@import 'config';
+$paragraph-background: #ededed;
+$paragraph-padding: 15px;
+$paragraph-margin: 10px;
 
+html,
 body {
-  background-color: $body-background;
-  background-image: url('../assets/img/sky.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  background: $paragraph-background;
+  margin: $paragraph-margin 0;
+  padding: $paragraph-padding;
+}
+
+.header {
+  background: $paragraph-background;
+  display: flex;
+  justify-content: space-between;
+  padding: $paragraph-padding;
+}
+
+.content-section {
+  padding: $paragraph-padding;
+}
+
+.menu {
+  display: flex;
+
+  li {
+    list-style-type: none;
+    margin-left: $paragraph-padding;
+  }
 }
