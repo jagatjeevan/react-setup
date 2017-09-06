@@ -45,7 +45,9 @@ const config = {
 
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, 'app/assets/favicon'), to: path.resolve(__dirname, 'build/favicon') },
-      { from: path.resolve(__dirname, 'app/assets/locale'), to: path.resolve(__dirname, 'build/locale') }
+      { from: path.resolve(__dirname, 'app/assets/locale'), to: path.resolve(__dirname, 'build/locale') },
+      { from: path.resolve(__dirname, 'app/assets/img'), to: path.resolve(__dirname, 'build/img') },
+      { from: path.resolve(__dirname, 'app/serviceWorker.js'), to: path.resolve(__dirname, 'build') }
     ]),
 
     new webpack.optimize.ModuleConcatenationPlugin()

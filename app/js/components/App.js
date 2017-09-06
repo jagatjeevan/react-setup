@@ -10,7 +10,7 @@ import About from './About';
 
 import translator from '../utils/I18N';
 import { setLanguage } from '../utils/language';
-import { changeLanguage } from '../actions/app';
+import { changeLanguage, changeImage } from '../actions/app';
 
 function mapStateToProps(state) {
   return {
@@ -21,16 +21,23 @@ function mapStateToProps(state) {
 function dispatchActionToProps(dispatch) {
   return {
     changeLanguage: bindActionCreators(changeLanguage, dispatch),
+    changeImg: bindActionCreators(changeImage, dispatch),
   };
 }
 
 export class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       greet: 'Hello User',
     };
+    this.changeImages = this.changeImages.bind(this);
     this.languageChange = this.languageChange.bind(this);
+  }
+
+  changeImages() {
+    const changedImage = this.props.imgSrc === '/img/image1.jpg' ? '/img/image2.jpg' : '/img/image1.jpg';
+    this.props.changeImg(changedImage);
   }
 
   languageChange(lang) {
@@ -52,6 +59,8 @@ export class App extends Component {
         </header>
         <section className="content-section">
           <div>{this.state.greet}</div>
+          <button onClick={this.changeImages}>Change Image</button>
+          <img src={this.props.imgSrc} alt="button" id="img" />
           <Switch>
             <Route path={paths.dashboard} component={Dashboard} />
             <Route path={paths.about} component={About} />
@@ -64,6 +73,8 @@ export class App extends Component {
 
 App.propTypes = {
   changeLanguage: PropTypes.func,
+  changeImg: PropTypes.func,
+  imgSrc: PropTypes.string,
 };
 
 export default withRouter(connect(mapStateToProps, dispatchActionToProps)(App));

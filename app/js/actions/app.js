@@ -6,3 +6,10 @@ export function changeLanguage(lang) {
     payload: lang,
   };
 }
+
+export function changeImage(imgSrc) {
+  return {
+    type: actionTypes.IMAGE_SOURCE,
+    payload: imgSrc,
+  };
+}

@@ -14,7 +14,7 @@ describe('Reducer', () => {
 
   it('removes the language attribute in state if non-supported language is passed', () => {
     const lang = 'fr';
-    const expectedData = { language: '' };
+    const expectedData = { imgSrc: '', language: '' };
     const expected = language({}, { type: 'hello', payload: lang });
 
     expect(expected).to.deep.equal(expectedData);
