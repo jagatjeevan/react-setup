@@ -5,7 +5,14 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
-  entry: path.resolve(__dirname, 'app/js/index') ,
+  entry: {
+    main: path.resolve(__dirname, 'app/js/index') ,
+    vendor: [
+      'react',
+      'react-dom',
+      'react-router-dom'
+    ]
+  },
 
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -47,6 +54,12 @@ const config = {
       { from: path.resolve(__dirname, 'app/assets/favicon'), to: path.resolve(__dirname, 'build/favicon') },
       { from: path.resolve(__dirname, 'app/assets/locale'), to: path.resolve(__dirname, 'build/locale') }
     ]),
+
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      filename: 'vendor.[hash].js',
+      minChunks: Infinity
+    }),
 
     new webpack.optimize.ModuleConcatenationPlugin()
   ],
