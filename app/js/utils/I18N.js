@@ -22,7 +22,7 @@ class I18nTranslator {
   initiateTranslator(resolve) {
     return new Promise(() => {
       let langToDisplay;
-      if (!Cookie.get(TranslationKey.lookUpKey)) { langToDisplay = supportedlanguages[0]; }
+      if (!Cookie.get(TranslationKey.lookUpKey)) { [langToDisplay] = supportedlanguages; }
       langToDisplay = (supportedlanguages.filter(lang => lang === Cookie.get(TranslationKey.lookUpKey)).length > 0) ? Cookie.get(TranslationKey.lookUpKey) : supportedlanguages[0];
       i18next
         .use(i18nextXhr)

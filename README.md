@@ -8,6 +8,7 @@ A sample project for a React project
 - [Node](https://nodejs.org/en/) : Make sure you are on 6.11.1 version.
 
 ###### Tech Stack
+- Yarn : Node package manager
 - Webpack : The module bundler
 - Sass : Css Pre-processor
 - Sass Linter : Style consistency
@@ -17,13 +18,11 @@ A sample project for a React project
 - React
 - Redux : state management
 - Translation : i18next
-- Unit Testing : Mocha and chai
-- Coverage : Istanbul.
 
 ###### Running the module
 - Check if you are running the right version of node. Check ".nvmrc" or "package.json"
-- npm install
-- npm start <br />
+- yarn install
+- yarn start <br />
 Check for other options in package.json, script section. 
 
 ## Some Practices followed
@@ -34,7 +33,7 @@ Check for other options in package.json, script section.
 
 ###### Component Names
 - Component names are Sentence case. App, Dashboard, etc.
-- Rest are small case. 
+- Rest are camel case. 
 
 ###### Fixme
 - Yarn deletes the .yml file required for sasslint. Hence not using yarn
