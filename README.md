@@ -1,6 +1,6 @@
 [![dependencies Status](https://david-dm.org/jagatjeevan/react-setup/status.svg)](https://david-dm.org/jagatjeevan/react-setup)
 [![devDependencies Status](https://david-dm.org/jagatjeevan/react-setup/dev-status.svg)](https://david-dm.org/jagatjeevan/react-setup?type=dev)
-# React setup
+# <font color="red">React setup</font>
 A sample project for a React project
 
 # Installation Guide
